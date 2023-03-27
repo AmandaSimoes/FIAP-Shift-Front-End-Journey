@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - Aula 5</title>
+</head>
+<body>
+    <script>
+        
+        let linha1 = [1, 2, 3];
+        let linha2 = [4, 5, 6];
+        let linha3 = [7, 8, 9];
+
+        let matriz = [
+            linha1,
+            linha2,
+            linha3
+        ];
+
+        console.table(matriz);
+
+        // ACESSANDO AS LINHAS
+        console.log(matriz[0]);
+        console.log(matriz[1]);
+        console.log(matriz[2]);
+
+        // ACESSANDO A CÉLULA DE VALOR 8
+        console.log(matriz[2][1]);
+
+        console.log(" ");
+
+        // PERCORRENDO UMA MATRIZ - OU SE VC DESEJAR - DESCENDO ATÉ O INFERNO
+
+        let qtdLinhas = matriz.length;
+        let qtdItensLinha;
+
+        for (let i = 0; i < qtdLinhas; i++){
+            // PARA CADA LINHA, POSSO DESCOBRIR O TAMANHO DA LISTA
+            // console.log(matriz[i].length);
+
+            qtdItensLinha = matriz[i].length;
+
+            for (let j = 0; j < qtdItensLinha; j++){
+                console.log(matriz[i][j]);
+            }
+        }
+
+
+    </script>
+</body>
+</html>

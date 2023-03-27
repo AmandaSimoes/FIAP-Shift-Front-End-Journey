@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 4 - Aula 4</title>
+</head>
+<body>
+    <script>
+        
+        // Escreva um programa que dadas duas notas escolares de 0 a 10 calcula a média 
+        // aritmética entre elas.
+
+        let nota1, nota2; // UNDEFINED
+
+        do {
+            nota1 = +prompt("Digite a nota");
+        } while (nota1 < 0 || nota1 > 10);
+
+        do {
+            nota2 = +prompt("Digite a nota 2")
+        } while (nota2 < 0 || nota2 > 10);
+
+        // DESAFIO... SERÁ QUE POSSO JUNTAR A REQUISIÇÃO DA NOTA EM UM DO/WHILE SÓ?
+
+        let media = (nota1 + nota2) / 2;
+
+        console.log(`A média é: ${media}`);
+
+    </script>
+</body>
+</html>

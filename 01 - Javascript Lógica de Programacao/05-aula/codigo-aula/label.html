@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Label - Aula 5</title>
+</head>
+<body>
+    <script>
+
+        let num1 = 0;
+        let num2 = 0;
+
+        // LABEL
+        loopExterno: while (num1 <= 3) {
+            console.log(`Laço EXTERNO: ${num1}`);
+
+            num1++;
+
+
+            // LABEL
+            loopInterno: while (num2 <= 5) {
+                if (num2 == 3) {
+                    break loopExterno;
+                }
+
+                console.log(`Laço INTERNO: ${num2}`);
+                
+                num2++;
+            }
+            num2 = 0;
+        }
+
+        // DESAFIO: TESTE OS LABELS COM O FOR
+
+    </script>
+</body>
+</html>

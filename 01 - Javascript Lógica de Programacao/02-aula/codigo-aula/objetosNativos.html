@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos Nativos Javascript - Aula 2</title>
+</head>
+<body>
+    <script>
+        // OBJETOS NATIVOS DE STRING
+
+        /*
+        let nome = "Alexandre";
+        let nomeLower = nome.toLowerCase();
+        console.log(nomeLower);
+        console.log(nome.toUpperCase());
+
+        console.log(nome.replace("A", "B"));
+
+        let frase = "Lorem ipsum dolor sit amet consectetur adipisicing elit.";
+        let fraseSemEspaco = frase.replace(" ", "");
+        console.log(fraseSemEspaco);
+
+        // posição - letra
+        // 0 - B
+        // 1 - a
+        // 2 - n
+        // 3 - a
+        // 4 - n
+        // 5 - a
+        let fruta = "Banana";
+        console.log(fruta.indexOf("a", 2));
+
+        let faculdade = "FIAP Tecnologia";
+        console.log(faculdade.slice(2));
+        console.log(faculdade.slice(0,4));
+
+        console.log(faculdade.split(" "))
+        */
+       
+        // OBJETO MATH
+
+        /*
+        let valor = 1.999999999999;
+        console.log(Math.floor(valor));
+        console.log(Math.round(valor));
+
+        let valorNegativo = -2.6;
+        console.log(Math.floor(valorNegativo));
+
+        let numero = 16;
+        console.log(Math.sqrt(numero));
+        console.log(Math.PI);
+
+        // --------------------------------------------
+
+        let numeroSorteado = Math.random();
+        console.log(numeroSorteado);
+
+        let numeroSorteado2 = numeroSorteado * 5;
+        console.log(numeroSorteado2);
+
+        let numeroSortFloor = Math.floor(numeroSorteado2);
+        console.log(numeroSortFloor + 1);
+
+        // --------------------------------------------
+
+        let numSorteado = Math.floor(Math.random() * 10) + 1;
+        console.log(numSorteado);
+
+        // COMO SORTEAR NÚMEROS DENTRO DE UM INTERVALO??
+        // POR EX: ENTRE 10 E 20
+        */
+
+        // OBJETO DATE
+
+        // 0 DOM
+        // 1 SEG
+        // 2 TER
+        // 3 QUA
+        // 4 QUI
+        // 5 sex
+
+
+        const dataAtual = new Date();
+        console.log(dataAtual.getFullYear());
+
+        let diaMarcado = 4;
+
+        if (dataAtual.getDay() == diaMarcado) {
+            console.log("HOJE É O DIA DA CONSULTA ... SISTEMA, DISPARA UM SMS");
+        }
+
+        const mes = dataAtual.getMonth() + 1
+
+        // IF TERNÁRIO!!!!
+
+        let semestre = mes <= 6 ? "Primeiro semestre" : "Segundo semestre";
+        
+        console.log(semestre);
+
+        // if (mes <= 6) {
+        //     semestre = "Primeiro semestre";
+        // } else {
+        //     semestre = "Segundo semestre";
+        // }
+    </script>
+</body>
+</html>

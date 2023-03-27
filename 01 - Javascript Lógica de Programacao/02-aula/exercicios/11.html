@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 11 - Aula 2</title>
+</head>
+<body>
+    <script>
+        let origemCarga = +prompt("Origem da carga [1-5]");
+        let pesoCaminhaoTon = +prompt("Peso do caminhão em toneladas");
+        let codCarga = +prompt("Código da carga: ");
+
+        let pesoCaminhaoKg = pesoCaminhaoTon * 1000;
+
+        let precoPorKg;
+
+        if (codCarga >= 10 && codCarga <= 20) {
+            precoPorKg = 100;
+        } else if (codCarga >= 21 && codCarga <= 30) {
+            precoPorKg = 250;
+        } else if (codCarga >= 31 && codCarga <= 40) {
+            precoPorKg = 340;
+        }
+        
+        let impostoPorc;
+
+        switch (origemCarga) {
+            case 1:
+                impostoPorc = 0.35;
+                break;
+            case 2:
+                impostoPorc = 0.25;
+                break;
+            case 3:
+                impostoPorc = 0.15;
+                break;
+            case 4:
+                impostoPorc = 0.05;
+                break;
+            case 5:
+                impostoPorc = 0;
+                break;
+        }
+
+        // CONTINHAS
+        let precoCarga = pesoCaminhaoKg * precoPorKg;
+        let valorImposto = precoCarga * impostoPorc;
+        let valorTotal = precoCarga + valorImposto;
+
+        console.log(`Peso da carga em kg: ${pesoCaminhaoKg}`);
+        console.log(`Preço da carga: ${precoCarga}`);
+        console.log(`Valor do imposto: ${valorImposto}`);
+        console.log(`Valor total: ${valorTotal}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 1 - Aula 3</title>
+</head>
+<body>
+    <script>
+        // Escreva um programa que faça o computador “pensar” em um número inteiro entre 
+        // 10 e 50 e peça para o usuário tentar descobrir qual foi o número escolhido pelo 
+        // computador. O programa deverá escrever na tela se o usuário venceu ou perdeu.
+
+        let min = 10;
+        let max = 50;
+
+        // let numeroAleatorio = Math.round((Math.random() * (40)));
+        let numeroAleatorio = Math.round((Math.random() * (max - min)) + min);
+        // let numeroAleatorioSomado = numeroAleatorio + min;
+
+        let numUsuario = +prompt("Tente adivinhar o número entre 10-50");
+
+        let status = numUsuario == numeroAleatorio ? "Venceu" : "Perdeu";
+
+        alert(`Número sorteado: ${numeroAleatorio} | Palpite: ${numUsuario} | ${status}`);
+    </script>
+</body>
+</html>

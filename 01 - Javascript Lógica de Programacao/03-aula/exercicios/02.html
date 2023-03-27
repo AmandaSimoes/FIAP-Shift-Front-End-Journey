@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Aula 3</title>
+</head>
+<body>
+    <script>
+        let valorSaque = +prompt("Valor para saque: ");
+        console.log(valorSaque);
+
+        let notas100 = Math.floor(valorSaque / 100);
+        console.log(`Valor: ${valorSaque}`);
+        console.log(`Notas 100 ${notas100}`);
+        console.log(" ");
+
+        valorSaque %= 100;
+        
+        let notas50 = Math.floor(valorSaque / 50);
+        console.log(`Valor: ${valorSaque}`);
+        console.log(`Notas 50 ${notas50}`);
+        console.log(" ");
+        valorSaque %= 50;
+
+        let notas10 = Math.floor(valorSaque / 10);
+        console.log(`Valor: ${valorSaque}`);
+        console.log(`Notas 10 ${notas10}`);
+        console.log(" ");
+        valorSaque %= 10;
+
+        let notas5 = Math.floor(valorSaque / 5);
+        console.log(`Valor: ${valorSaque}`);
+        console.log(`Notas 5 ${notas5}`);
+        console.log(" ");
+        valorSaque %= 5;
+
+        let notas1 = valorSaque;
+        console.log(`Valor: ${valorSaque}`);
+        console.log(`Notas 1 ${notas1}`);
+
+        console.log(" ");
+        console.log(" ");
+
+        console.log(`${notas100} notas de R$ 100`);
+        console.log(`${notas50} notas de R$ 50`);
+        console.log(`${notas10} notas de R$ 10`);
+        console.log(`${notas5} notas de R$ 5`);
+        console.log(`${notas1} notas de R$ 1`);
+
+    </script>
+</body>
+</html>

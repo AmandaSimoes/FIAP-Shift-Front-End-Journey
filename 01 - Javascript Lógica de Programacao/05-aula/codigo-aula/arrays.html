@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays - Aula 5</title>
+</head>
+<body>
+    <script>
+        
+        // ARRAYS SÃO LISTAS!!
+        // ARMAZENAM DIVERSOS DADOS DIFERENTES
+        // QTS DADOS VC QUISER
+
+        // 1ª FORMA DE DECLARAR ARRAYS
+        let lista1 = new Array([20, 30, 40]);
+        // console.log(lista1);
+
+        // 2ª FORMA DE DECLARAR ARRAYS
+        let lista2 = [2, 3, 4];
+        // console.log(lista2);
+
+        let frutas = ["Maçã", "Pera", "Morango", "Melancia"];
+        console.log(frutas);
+
+        // frutas[0] = Maçã
+        // frutas[1] = Pera
+        // frutas[2] = Morango
+        // frutas[3] = Melancia
+
+        console.log(frutas[1]);
+
+        let numSorteados = [10, 40, 32, 50, 20, 1];
+        console.log(numSorteados);
+
+        let lista = [12, "Alexandre", true, false, 10.3, true, [1, 2], [true, false]];
+        console.log(lista);
+
+        let gradeProdutos = [
+            ["Nome 1", 10.20, "Descrição 1"],
+            ["Nome 2", 1.20, "Descrição 2"],
+        ];
+        console.log(gradeProdutos);
+
+
+        console.log(" ");
+        // console.log(lista.toString());
+
+        console.log(frutas);
+        
+        // INSERE NOVO ELEMENTO NO FINAL DO ARRAY
+        frutas.push("Abacaxi");
+        console.log(frutas);
+
+        // INSERE NOVO ELEMENTO NO COMEÇO DO ARRAY
+        frutas.unshift("Abacaxi");
+        console.log(frutas);
+
+        // APAGA O ÚLTIMO ELEMENTO DO ARRAY
+        frutas.pop();
+        frutas.pop();
+        console.log(frutas);
+
+        // APAGA O PRIMEIRO ELEMENTO DO ARRAY
+        frutas.shift();
+        frutas.shift();
+        console.log(frutas);
+
+        let listaJunta = frutas.concat(numSorteados);
+        console.log(listaJunta);
+
+        frutas.push("Melão");
+        frutas.push("Banana");
+        console.log(frutas);
+
+        // frutas[0] = Pera
+        // frutas[1] = Morango
+        // frutas[2] = Melão
+        // frutas[3] = Banana
+        
+        let retorno = frutas.splice(1, 2, "X", "Y", "Z");
+        console.log(frutas);
+        console.log(retorno);
+
+        let retornoSlice = frutas.slice(0, 2);
+        console.log(frutas);
+        console.log(retornoSlice);
+
+
+    </script>
+</body>
+</html>

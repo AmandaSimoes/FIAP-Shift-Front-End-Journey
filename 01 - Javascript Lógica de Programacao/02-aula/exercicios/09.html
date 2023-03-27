@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 09 - Aula 3</title>
+</head>
+<body>
+    <script>
+        alert(`Escolha o tipo de empreendimento:
+        [1] - residência
+        [2] - comércio
+        [3] - indústria`);
+
+        let tipoCliente = +prompt("Digite o número do tipo");
+        let kWh = +prompt("Digite a qtd total de kW/h gasto no mês");
+
+        let valorKWh;
+
+        if (tipoCliente == 1) {
+            valorKWh = 0.60;
+        } else if (tipoCliente == 2) {
+            valorKWh = 0.48;
+        } else if (tipoCliente == 3) {
+            valorKWh = 1.29;
+        } else {
+            alert("Tipo do cliente inválido!");
+        }
+
+        let totalConta = kWh * valorKWh;
+        alert(`Total a ser pago: R$ ${totalConta}`);
+
+    </script>
+</body>
+</html>

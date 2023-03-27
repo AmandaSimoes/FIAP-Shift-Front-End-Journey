@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do/While - Aula 4</title>
+</head>
+<body>
+    <script>
+        
+        // EXEMPLO DA CONTAGEM DE CAMBALHOTAS
+
+        let cc = 20;
+
+        // do {
+        //     console.log(`Cambalhota ${cc}`)
+        //     cc++;
+        // } while(cc < 3);
+
+        // while (cc < 3) {
+        //     console.log(`Cambalhota ${cc}`)
+        //     cc++;
+        // }
+
+        // -----------------------------------------
+
+        // let numero;
+
+        // do {
+        //     numero = +prompt("Digite um número");
+        // } while (numero != 5);
+
+        // console.log("Fim");
+
+        // -----------------------------------------
+
+        let numero;
+
+        do {
+            numero = +prompt("Digite um número entre 0 e 100");
+        } while (numero < 0 || numero > 100);
+
+        console.log(numero);
+
+    </script>
+</body>
+</html>

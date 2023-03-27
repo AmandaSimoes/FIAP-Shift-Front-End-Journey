@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio - Aula 4</title>
+</head>
+<body>
+    <script>
+        // Escreva um programa que faça o computador “pensar” em um número inteiro entre 
+        // 10 e 50 e peça para o usuário tentar descobrir qual foi o número escolhido pelo 
+        // computador. O programa deverá escrever na tela se o usuário venceu ou perdeu.
+
+        let jogarNovamente = "";
+        do {
+            let numAleatorio = Math.random();
+            console.log(`Nº aleatório sorteado Math.random(): ${numAleatorio}`);
+
+            let numMultiplicado = numAleatorio * (50 - 10);
+            console.log(`Nº aleatório múltiplicado por 50-10 = 40: ${numMultiplicado}`);
+
+            let numArredondado = Math.round(numMultiplicado);
+            console.log(`Nº múltiplicado arredondado: ${numArredondado}`);
+
+            let numIntervalo = numArredondado + 10;
+            console.log(`Nº final do intervalo solicitado (10-50): ${numIntervalo}`);
+            console.log(" ");
+
+            let numeroUsuario;
+            
+            // VERIFICANDO SE O USUÁRIO VAI DIGITAR UM NÚMERO ENTRE 10 E 50
+            // SE ELE NAO DIGITAR UM NUMERO ENTRE 10 E 50, VOU PEDIR PARA DIGITAR NOVAMENTE
+            // 1ª POSSIBILIDADE: NUMERO DO USUARIO SER MENOR 10
+            // 2ª POSSIBILIDADE: NUMERO DO USUARIO SER MAIOR 50
+            do {
+                numeroUsuario = +prompt("Adivinhe um número entre 10 e 50");
+            } while(numeroUsuario < 10 || numeroUsuario > 50);
+
+            console.log(`Número sorteado: ${numIntervalo}`);
+            console.log(`Número usuário: ${numeroUsuario}`);
+
+            if (numeroUsuario == numIntervalo) {
+                console.log("Ganhou");
+            } else {
+                console.log("Perdeu");
+            }
+
+            jogarNovamente = prompt("Digite [S] para jogar novamente");
+
+            console.log(" ");
+            console.log("--------------");
+            console.log(" ");
+
+        } while (jogarNovamente == "S");
+
+        console.log("FIM DO JOGO");
+
+
+
+    </script>
+</body>
+</html>

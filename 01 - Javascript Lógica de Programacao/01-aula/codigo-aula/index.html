@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 1 - Javascript - Lógica de programação</title>
+</head>
+
+<body>
+    <!-- AQUI COMENTÁRIOS HTML -->
+
+    <p id="nome"></p>
+
+    <!-- <script src="js/app.js"></script> -->
+    <script>
+        // let nome = "Alexandre";
+        // window.alert(`Bem vindo, ${nome}!`);
+        // window.confirm(`Você tem certeza que deseja sair?`);
+
+        let nomeDigitado = prompt("Digite seu nome:");
+        console.log(nomeDigitado);
+
+        document.getElementById("nome").innerHTML = `Olá, ${nomeDigitado}! Seja bem-vindo.`;
+    </script>
+</body>
+
+</html>

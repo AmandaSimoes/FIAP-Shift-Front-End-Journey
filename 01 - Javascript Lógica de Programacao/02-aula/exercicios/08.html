@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 08 - Aula 3</title>
+</head>
+<body>
+    <script>
+        let distTotal = +prompt("Distância total em km");
+        let combustivelTotal = +prompt("Combustível total em L");
+
+        let kmPorLitro = distTotal / combustivelTotal;
+
+        // let resposta;
+        // if (kmPorLitro < 8) {
+        //     resposta = `${kmPorLitro} km/L. Esse carro bebe hein!`;
+        // } else {
+        //     resposta = `${kmPorLitro} km/L. Autonomia legal!`;
+        // }
+        // alert(resposta);
+
+        // IF TERNÁRIO
+        
+        let resposta = kmPorLitro < 8 ? "Esse carro bebe hein!" : "Autonomia legal!";
+        alert(resposta);
+
+    </script>
+</body>
+</html>
