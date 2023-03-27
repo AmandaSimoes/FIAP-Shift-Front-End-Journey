@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funções - Aula 6</title>
+</head>
+<body>
+    <script>
+        
+        // PARTE 1
+
+        // DECLARANDO MINHA FUNÇÃO
+        // function saudacao() {
+        //     console.log("Seja bem-vindo!");
+        // }
+
+        // // CHAMAR MINHA FUNÇÃO
+        // saudacao();
+
+
+        // PARTE 2
+
+        // function saudacao() {
+        //     console.log("Seja bem-vindo!");
+
+        //     let nome = prompt("Digite seu nome: ");
+        //     let idade = +prompt("Digite sua idade");
+
+            // if (idade >= 18) {
+            //     console.log(`Olá, ${nome}! Você é maior de idade.`);
+            // } else {
+            //     console.log(`Olá, ${nome}! Você é menor de idade.`);
+            // }
+        // }
+
+        // saudacao();
+        // saudacao();
+
+        // PARTE 3 -- FUNÇÃO COM PARÂMETROS/ARGUMENTOS E SEM RETORNO
+        
+        // function saudacaoComArgs(nome, idade) {
+        //     console.log(nome, idade);
+        // }
+
+        // let nomeInput = prompt("Nome");
+        // let idadeInput = +prompt("Idade");
+
+        // saudacaoComArgs(nomeInput, idadeInput);
+
+        // saudacaoComArgs("Alexandre", 23);
+        // saudacaoComArgs("Ricardo", 28);
+        // saudacaoComArgs("Amanda", 27);
+        // saudacaoComArgs("Aline", 26);
+        // saudacaoComArgs("Gustavo", 22);
+
+
+        // PARTE 4 -- FUNÇÃO SEM PARÂMETRO COM RETORNO
+
+        function numeroAleatorio() {
+            return 2;
+        }
+
+        let retornoNumero = numeroAleatorio();
+        // console.log(retornoNumero);
+
+        // PARTE 5 -- FUNÇÃO COM PARÂMETROS E COM RETORNOS
+
+        function somar(a, b) {
+            let soma = a + b;
+            return soma;
+        }
+
+        let resultado = somar(1, 2);
+        console.log(resultado);
+
+
+    </script>
+</body>
+</html>

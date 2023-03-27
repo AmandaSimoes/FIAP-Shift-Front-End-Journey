@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Each - Aula 6</title>
+</head>
+<body>
+    <script>
+        
+        let lista = [10, 20, 30, 40];
+        console.log(lista);
+
+        // FOR EACH É UMA OUTRA MANEIRA DE PERCORRER ARRAYS
+        // PARA CADA....
+
+        function funcArray(valor, indice, lista){
+            console.log(`valor: ${valor} | indice: ${indice} | lista: ${lista}`);
+            // console.log({valor, indice, lista});
+        }
+
+        lista.forEach(funcArray);
+
+        // FUNÇÃO ANÔNIMA
+        // lista.forEach(function(a, b, c) {
+        //     console.log({a, b, c});
+        // });
+
+
+
+    </script>
+</body>
+</html>

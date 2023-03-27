@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos - Aula 6</title>
+</head>
+<body>
+    <script>
+
+        // FACTORY FUNCTION -- FUNÇÃO PARA CRIAR OBJETOS
+
+        function criarUsuario(id, nome, email, senha) {
+            return {
+                id,
+                nome,
+                email,
+                senha
+            };
+        }
+
+        let usuarios = [];
+        let usuario1 = criarUsuario(10,"Eu","eu@gmail.com","12345");
+        console.log(usuario1);
+
+        // usuarios.push(usuario1);
+        // console.log(usuarios);
+        // console.log(" ");
+
+        // let usuario2 = criarUsuario(11,"Tu","tu@gmail.com","password");
+        // usuarios.push(usuario2);
+
+        // console.log(usuarios);
+
+    </script>
+</body>
+</html>
