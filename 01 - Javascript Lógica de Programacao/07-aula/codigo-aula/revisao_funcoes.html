@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Funções - Aula 7</title>
+</head>
+<body>
+    <script>
+
+        // DECLARAÇÃO DE FUNÇÃO
+        function dividir(n1, n2) {
+            if (n2 != 0) {
+                return n1 / n2;
+            } else {
+                return "ERRO";
+            }
+        }
+
+        // ARROW FUNCTION =>
+        // let dividirArrow = (n1, n2) => n1/n2;
+
+        // let dividirArrow = (n1, n2) => {
+        //     if (n2 != 0) {
+        //         return n1 / n2;
+        //     } else {
+        //         return "ERRO";
+        //     }
+        // }
+
+        // let dividirArrow = (n1, n2) => {
+        //     let retornoFunc = (n2 != 0) ? n1 / n2 : "ERRO";
+        //     return retornoFunc;
+        // }
+
+        // let dividirArrow = (n1, n2) => {
+        //     return (n2 != 0) ? n1 / n2 : "ERRO";
+        // }
+
+        let dividirArrow = (n1, n2) => (n2 != 0) ? n1 / n2 : "ERRO";
+
+
+        let num1 = +prompt("Digite o primeiro num");
+        let num2 = +prompt("Digite o segundo num");
+
+        // CHAMADA DA FUNÇÃO
+        let resultado = dividir(num1, num2);
+        let resultadoArrow = dividirArrow(num1, num2);
+
+        console.log(resultado);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão Objetos - Aula 7</title>
+</head>
+<body>
+    <script>
+
+        // {CHAVE: VALOR}
+
+        let pessoa = {
+            nome: "Alexandre",
+            idade: 20,
+            email: "ale@email.com"
+        }
+
+        let pessoa2 = {
+            nome: "XXXXX",
+            idade: 20,
+            email: "xxx@email.com"
+        }
+
+        console.log(pessoa);
+        console.log(pessoa.nome);
+        console.log(pessoa["idade"]);
+
+        for (let chave in pessoa) {
+            console.log(chave, pessoa[chave]);
+        }
+
+        let pessoas = [pessoa, pessoa2];
+
+        // pessoas[0] = pessoa
+        // pessoas[1] = pessoa2
+
+
+        // FUNCAO QUE CRIA OBJETOS -- FACTORY FUNCTION
+        // {CHAVE: VALOR}
+        function criarPessoa(nome, idade, email) {
+            return {
+                nome,
+                idade,
+                email
+            }
+        }
+
+        console.log(" ");
+        
+        let pessoa3 = criarPessoa("Fulano", 43, "fulano@email.com");
+        console.log(pessoa3);
+
+        pessoas.push(pessoa3);
+        console.log(pessoas);
+
+
+
+        console.log(" ");
+        for (let valor of pessoas) {
+            console.log(valor.email);
+        }
+
+
+        // SPREAD OPERATOR
+        let arr1 = [0, 1, 2];
+        const arr2 = [3, 4, 5];
+        arr1 = [...arr1, ...arr2];
+        console.log(arr1);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 7 - Aula 7</title>
+</head>
+
+<body>
+    <script>
+
+        // Crie um sistema de cadastro de funcionários que deve criar um objeto novo para cada 
+        // funcionário cadastrado com as informações: nome, cargo e salário. Ele deve 
+        // armazenar todos esses objetos em uma lista. Ao final de cada cadastro ele deve 
+        // perguntar se deseja cadastrar um novo funcionário e recomeçar o processo, e caso 
+        // não haja mais funcionários para cadastrar, ele deve chamar uma função que deve 
+        // apresentar a quantidade de funcionários com cada cargo e os nomes deles. (Você 
+        // pode limitar as opções de cargo para facilitar.)
+
+        function criarFuncionario(nome, cargo, salario) {
+            return { nome, cargo, salario }
+        }
+
+        function exibeFuncionarios(listaFuncionarios) {
+            console.log(listaFuncionarios);
+
+            console.log(`Quantidade de funcionários cadastrado é: ${listaFuncionarios.length}`);
+
+            let listaCargos = [];
+
+            for (let funcionario of listaFuncionarios) {
+                listaCargos.push(funcionario["cargo"]);
+            }
+
+            console.log(listaCargos);
+
+            let uniqueCargos = [...new Set(listaCargos)];
+            console.log(uniqueCargos);
+
+            console.log(`Lista de cargos: ${uniqueCargos}`);
+
+
+            console.log(" ");
+
+            console.log("FUNCIONÁRIOS E SEUS CARGOS")
+            
+            for (let funcionario of listaFuncionarios) {
+                console.log(`Nome: ${funcionario["nome"]} | Cargo: ${funcionario["cargo"]}`);
+            }
+            
+
+
+        }
+
+        let feedbackCadastro = "";
+        let funcionarios = [];
+
+        do {
+            let nome = prompt("Digite o nome do funcionário");
+            let cargo = prompt("Digite o cargo do funcionário");
+            let salario = +prompt("Digite o salário do funcionário");
+
+            let funcionario = criarFuncionario(nome, cargo, salario);
+
+            funcionarios.push(funcionario);
+            // console.log(funcionarios);
+
+            feedbackCadastro = prompt("Deseja cadastrar um novo funcionário? Digite [S] para sim.");
+        } while (feedbackCadastro == "S")
+
+        exibeFuncionarios(funcionarios)
+
+    </script>
+</body>
+
+</html>
