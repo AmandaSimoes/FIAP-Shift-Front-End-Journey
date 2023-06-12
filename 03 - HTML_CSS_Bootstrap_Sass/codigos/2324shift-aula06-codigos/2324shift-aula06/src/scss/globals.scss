@@ -1,0 +1,112 @@
+/*! GLOBALS.CSS
+
+    Aqui é um comentário que vai aparecer em tudo
+    inclusive em arquivos minificados. */
+
+@import 'common/variables';
+@import 'common/mixins';
+@import 'common/functions';
+@import 'components/button';
+@import 'components/card';
+
+img {
+  max-width: 100%;
+}
+
+// Aqui é um comentário apenas no arquivo SCSS
+// ele não vai ser compilado no CSS
+
+/* Aqui é um comentário que vai aparecer no CSS */
+
+/* #{5 + 5} */
+main {
+  width: 996px;
+  margin: 0 auto;
+
+  h1,
+  h2 {
+    @include transitions;
+    transition-duration: transitionTime(false);
+
+    &:hover {
+      color: aqua;
+    }
+  }
+
+  h1 {
+    .highlight {
+      color: red;
+    }
+  }
+
+  h2 {
+    .highlight {
+      color: purple;
+    }
+  }
+
+  %image-hover {
+    &:hover {
+      transform: scale(2);
+      opacity: 1;
+      @include transitions;
+      transition-duration: transitionTime(true);
+    }
+  }
+
+  .first-image {
+    opacity: 0.5;
+    @include size(200px, 80px);
+    @include border(red);
+    @extend %image-hover;
+  }
+
+  .second-image {
+    opacity: 0.5;
+    @include size($w: 80px, $h: 120px);
+    @include border(blue);
+    @extend %image-hover;
+  }
+
+  .third-image {
+    opacity: 0.5;
+    @include size($w: 150px, $rotate: 60deg);
+    @include border(green);
+    @extend %image-hover;
+  }
+}
+
+%text-display {
+  $font-size: 16px;
+
+  font-size: $font-size;
+
+  @include desktop {
+    font-size: $font-size * 2;
+  }
+}
+
+ul {
+  @for $i from 1 through 5 {
+    li:nth-child(#{$i}) {
+      font-size: 16px * $i;
+      border-bottom: 1px solid #ccc;
+
+      @if $i == 5 {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+$sizes: 100px, 200px, 300px;
+
+@each $size in $sizes {
+  .size-#{$size} {
+    width: $size;
+    height: $size;
+    background: #f60;
+    padding: 10px;
+    margin: 10px;
+  }
+}

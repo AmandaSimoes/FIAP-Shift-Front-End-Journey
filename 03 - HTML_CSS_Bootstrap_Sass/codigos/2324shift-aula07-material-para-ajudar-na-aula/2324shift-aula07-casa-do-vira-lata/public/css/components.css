@@ -1,0 +1,71 @@
+/* == CONTAINER == */
+.container {
+  width: 100%;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    width: 96.6rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 114.3rem;
+  }
+}
+
+/* == TEXT == */
+.text-display {
+  font-size: var(--text-xl);
+}
+
+.text-lg {
+  font-size: var(--text-lg);
+}
+
+.text-sm {
+  font-size: var(--text-md);
+}
+
+@media (min-width: 1024px) {
+  .text-display {
+    font-size: var(--text-display);
+  }
+
+  .text-lg {
+    font-size: var(--text-lg);
+  }
+}
+
+/* == HIGHLIGHT == */
+.highlight-blue {
+  color: var(--secondary-dark);
+}
+
+/* == BUTTON == */
+.btn {
+  padding: 1.4rem 1.6rem;
+  min-width: 23.2rem;
+  border-radius: var(--rounded-pill);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  transition: var(--transition-base);
+}
+
+.btn.btn-primary {
+  background-color: var(--primary-medium);
+  box-shadow: var(--glow-one);
+  color: var(--neutral-white);
+}
+
+.btn.btn-primary:hover {
+  background-color: var(--primary-dark);
+}

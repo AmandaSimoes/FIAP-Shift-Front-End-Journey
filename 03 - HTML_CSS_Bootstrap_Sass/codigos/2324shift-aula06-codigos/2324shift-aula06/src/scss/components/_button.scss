@@ -1,0 +1,47 @@
+@import '../common/mixins';
+
+%button-base {
+  $small-padding: 8px 12px;
+  $mobile-width: 100%;
+  $desktop-width: 150px;
+
+  width: $mobile-width;
+  padding: $small-padding;
+  border: none;
+  outline: none;
+  color: #fff;
+
+  @media (min-width: 768px) {
+    width: $desktop-width;
+  }
+
+  @media (min-width: 1024px) {
+    width: #{$desktop-width * 2};
+  }
+}
+
+.button-red {
+  $border: 2px solid purple;
+
+  @extend %button-base;
+  @extend %text-display;
+
+  @include applyColorRed;
+
+  @include desktop {
+    background: $dark-red;
+  }
+}
+
+.button-blue {
+  @extend %button-base;
+
+  @include applyColorBlue;
+}
+
+.button-dark-blue {
+  $common-blue: darkblue;
+
+  @extend %button-base;
+  background: $common-blue;
+}

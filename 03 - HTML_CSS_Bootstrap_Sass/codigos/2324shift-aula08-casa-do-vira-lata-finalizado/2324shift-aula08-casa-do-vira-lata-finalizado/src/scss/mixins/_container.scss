@@ -1,0 +1,20 @@
+@mixin container($with-mobile-padding: true) {
+  width: 100%;
+
+  @if $with-mobile-padding {
+    padding-left: 2.2rem;
+    padding-right: 2.2rem;
+  }
+
+  @include tablet-landscape {
+    width: 96.6rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @include desktop {
+    width: 114.3rem;
+  }
+}

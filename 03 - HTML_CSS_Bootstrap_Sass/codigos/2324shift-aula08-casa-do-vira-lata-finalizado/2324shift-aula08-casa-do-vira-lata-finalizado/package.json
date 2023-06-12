@@ -1,0 +1,19 @@
+{
+  "name": "2324shift-aula07-casa-do-vira-lata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile-sass": "sass src/scss:public/css --style compressed",
+    "watch-sass": "sass src/scss:public/css --style compressed --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "sobrecarouzel": "^1.1.2"
+  }
+}

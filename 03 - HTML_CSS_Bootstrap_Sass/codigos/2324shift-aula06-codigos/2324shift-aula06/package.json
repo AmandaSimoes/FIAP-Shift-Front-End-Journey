@@ -1,0 +1,17 @@
+{
+  "name": "2324shift-aula06",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "mostre-versao-do-sass": "sass --version",
+    "compile-sass": "sass src/scss:public/css --style compressed",
+    "watch-sass": "sass src/scss:public/css --watch --style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.62.1"
+  }
+}

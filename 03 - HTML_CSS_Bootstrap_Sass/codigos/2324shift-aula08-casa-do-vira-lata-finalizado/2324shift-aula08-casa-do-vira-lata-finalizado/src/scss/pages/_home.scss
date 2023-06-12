@@ -1,0 +1,288 @@
+%space-between-sections {
+  padding-top: 7.8rem;
+
+  @include tablet-landscape {
+    padding-top: 11.2rem;
+  }
+}
+
+/* == HERO SECTION == */
+#hero-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-bottom: 8.4rem;
+  gap: 2.2rem;
+
+  @include tablet-landscape {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #hero-section-image {
+    display: flex;
+    justify-content: center;
+
+    @include tablet-landscape {
+      order: 2;
+      justify-content: flex-end;
+    }
+
+    img {
+      height: 26.6rem;
+      border-radius: $rounded-full;
+
+      @include tablet-landscape {
+        height: 45.3rem;
+      }
+
+      @include desktop {
+        height: 50.3rem;
+      }
+    }
+  }
+
+  #hero-section-text {
+    @include tablet-landscape {
+      width: 40.9rem;
+      order: 1;
+    }
+
+    %format-text {
+      text-align: center;
+
+      @include tablet-landscape {
+        text-align: left;
+      }
+    }
+
+    h1 {
+      margin-top: 0;
+      margin-bottom: 2.4rem;
+      @extend %format-text;
+    }
+
+    p {
+      font-weight: var(--font-weight-bold);
+      margin: 0;
+      @extend %format-text;
+    }
+
+    .btn {
+      width: 100%;
+      margin-top: 2.4rem;
+
+      @include tablet-landscape {
+        width: auto;
+        margin-top: 3.8rem;
+      }
+    }
+  }
+}
+
+/* == HOW IT WORKS == */
+#how-it-works {
+  @extend %space-between-sections;
+
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7.2rem;
+    padding: 0 1.6rem;
+
+    @include tablet-landscape {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .content-item {
+      display: grid;
+      gap: 1.6rem;
+
+      h3,
+      p {
+        text-align: center;
+        margin: 0;
+      }
+
+      h3 {
+        font-size: $text-sm;
+      }
+
+      img {
+        height: 14.9rem;
+        margin: 0 auto 3rem;
+      }
+    }
+  }
+}
+
+/* == WHO WE ARE == */
+#who-we-are {
+  @extend %space-between-sections;
+
+  .content {
+    display: grid;
+    gap: 1.2rem;
+    grid-template-areas:
+      'first first'
+      'second third';
+
+    @include tablet-landscape {
+      grid-template-areas:
+        'first first second'
+        'first first third';
+    }
+
+    > div {
+      border-radius: $rounded-lg;
+
+      @include background-rules;
+    }
+
+    .first-pic {
+      grid-area: first;
+      height: 19.3rem;
+      background-image: url('/public/images/quem-somos-homem-mulher-cachorro-adotado.png');
+
+      @include tablet-landscape {
+        height: 50rem;
+      }
+    }
+
+    .second-pic {
+      grid-area: second;
+      height: 15.3rem;
+      background-image: url('/public/images/quem-somos-filhotes-na-rua.png');
+
+      @include tablet-landscape {
+        height: 24.4rem;
+      }
+    }
+
+    .third-pic {
+      grid-area: third;
+      height: 15.3rem;
+      background-image: url('/public/images/quem-somos-maos-patas-cachorro-adotado.png');
+
+      @include tablet-landscape {
+        height: 24.4rem;
+      }
+    }
+  }
+}
+
+/* == MEET VOLUNTEERS == */
+#meet-volunteers {
+  @extend %space-between-sections;
+
+  .content {
+    @include container(false);
+  }
+
+  #volunteers-list-wrapper {
+    .arrow {
+      display: none;
+
+      @include tablet-landscape {
+        display: block;
+        font-size: 2.4rem;
+        margin-top: -2.4rem;
+        cursor: pointer;
+        color: $neutral-medium;
+        transition: $transition-base;
+
+        &:hover {
+          color: $neutral-black;
+        }
+      }
+    }
+
+    #volunteers-list {
+      display: flex;
+      gap: 3.2rem;
+      padding: 0 2.2rem 1.2rem;
+      user-select: none;
+
+      @include tablet-landscape {
+        padding: 0;
+        gap: 6rem;
+      }
+    }
+  }
+}
+
+#adopt-a-friend {
+  @extend %space-between-sections;
+
+  .content {
+    @include container(false);
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5.2rem;
+
+    @include tablet-landscape {
+      grid-template-columns: 1fr 1fr;
+      gap: 7.2rem;
+    }
+
+    #adopt-a-friend-illustration-wrapper {
+      overflow: hidden;
+      order: 2;
+
+      @include tablet-landscape {
+        order: 1;
+      }
+
+      #adopt-a-friend-illustration {
+        width: 135vw;
+        max-width: none;
+        margin-left: -15vw;
+
+        @include tablet-landscape {
+          width: auto;
+          margin-left: 0;
+          height: 45.4rem;
+          max-width: 100%;
+        }
+      }
+    }
+
+    #onboarding {
+      padding: 4rem 2.4rem;
+      order: 1;
+
+      @include tablet-landscape {
+        order: 2;
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2.4rem;
+
+        h3 {
+          font-size: $text-md;
+          margin: 0;
+        }
+
+        div {
+          color: $neutral-medium;
+
+          .step-label {
+            display: none;
+
+            @include tablet-landscape {
+              display: inline-block;
+            }
+          }
+        }
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@function transitionTime($isImage) {
+  $transition-duration: 0;
+
+  @if $isImage {
+    $transition-duration: 500ms;
+  } @else {
+    $transition-duration: 200ms;
+  }
+
+  @return $transition-duration;
+}

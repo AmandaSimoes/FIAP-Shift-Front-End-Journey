@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Fontes Personalizadas (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Fonte Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fonte Courier Prime -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Arquivos CSS -->
+    <link rel="stylesheet" href="/public/css/normalize.css" />
+    <link rel="stylesheet" href="/public/css/globals.css" />
+    <link rel="stylesheet" href="/public/css/pages/home.css" />
+
+    <title>John Doe - Frontend Engineer</title>
+  </head>
+  <body>
+    <header id="main-header" class="container">
+      <nav>
+        <a href="/" class="active">home</a>
+        <a href="/sobre">sobre</a>
+        <a href="/blog">blog</a>
+        <a href="/contato">contato</a>
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <section id="hero-section" class="container">
+        <header>
+          <div class="profile-wrapper">
+            <div class="highlight">// fazer o que ama é diversão! _</div>
+
+            <div class="profile-info-wrapper">
+              <div
+                class="avatar avatar-large"
+                aria-label="Foto de perfil do John Doe"
+              ></div>
+              <div class="profile-info">
+                <h1>John Doe</h1>
+                <div>Frontend Engineer @ Acme</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="profile-bio">
+            <p>
+              Criando coisas incríveis desde 2012, com muita atenção aos
+              detalhes, sentimento de dono e exercendo o feedback.
+            </p>
+
+            <p>Você pode me chamar de John. <span class="emoji">😁</span></p>
+          </div>
+        </header>
+      </section>
+
+      <section id="last-blog-post" class="container">
+        <div class="blog-post">
+          <div
+            class="blog-post-image"
+            style="
+              background-image: url('/public/images/blog-post-html-css.png');
+            "
+          ></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

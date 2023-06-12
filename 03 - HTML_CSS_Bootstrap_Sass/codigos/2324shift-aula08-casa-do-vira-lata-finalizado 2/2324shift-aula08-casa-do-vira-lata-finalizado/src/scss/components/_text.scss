@@ -1,0 +1,19 @@
+.text-display {
+  font-size: $text-xl;
+
+  @include tablet-landscape {
+    font-size: $text-display;
+  }
+}
+
+.text-lg {
+  font-size: $text-md;
+
+  @include tablet-landscape {
+    font-size: $text-lg;
+  }
+}
+
+.text-sm {
+  font-size: $text-sm;
+}
