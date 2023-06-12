@@ -1,0 +1,5 @@
+JSON-SERVER: https://github.com/typicode/json-server
+API REST: https://restfulapi.net/
+PROMISE: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise
+HOISTING: https://developer.mozilla.org/en-US/docs/Glossary/Hoisting
+Nullish Coalescing: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing

@@ -1,0 +1,23 @@
+{
+  "name": "casa-do-vira-lata",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "client": "live-server .",
+    "server": "json-server --watch db.json",
+    "compile-sass": "sass src/scss:public/css --style compressed",
+    "watch-sass": "sass src/scss:public/css --style compressed --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.62.1"
+  },
+  "dependencies": {
+    "carouzel": "^1.1.2",
+    "json-server": "^0.17.3"
+  }
+}

@@ -1,0 +1,12 @@
+.avatar {
+  border-radius: $rounded-full;
+  @include background-rules;
+
+  &-small {
+    @include size(3.2rem);
+  }
+
+  &-large {
+    @include size(18.4rem);
+  }
+}

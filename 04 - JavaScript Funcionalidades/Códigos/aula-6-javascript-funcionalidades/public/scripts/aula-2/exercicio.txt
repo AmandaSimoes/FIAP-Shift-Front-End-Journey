@@ -1,0 +1,13 @@
+Exercício da Aula 2:
+
+0. Crie o arquivo 'como-funciona.js' e o importe no HTML.
+1. Crie os elementos necessários para todas as partes da sessão como funciona.
+  1.1: Elementos necessários: 
+    1.1.1: div com class item-content
+    1.1.2: imagem com src e alt (setAttribute)
+    1.1.3: título com h3
+    1.1.4: o paragrafo
+2. Busque a div com o ID 'how-it-works' e adicione os elmentos criados.
+
+
+PS: O conteúdo dos elementos tem que estar no código JS!
