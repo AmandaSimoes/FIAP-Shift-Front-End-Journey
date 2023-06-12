@@ -1,0 +1,161 @@
+@import './core/variables';
+@import './mixins/container';
+@import './mixins/size';
+@import './mixins/breakpoints';
+@import './mixins/background-rules';
+
+/* COMPONENTS */
+@import './components/text';
+@import './components/container';
+@import './components/button';
+@import './components/highlight';
+@import './components/avatar';
+@import './components/profile-description';
+@import './components/card';
+@import './components/input';
+
+/* PAGES */
+@import './pages/home';
+
+html {
+  font-size: $font-base;
+}
+
+body {
+  font-family: $font-family;
+  font-size: $text-xs;
+  color: $neutral-dark;
+  background: linear-gradient(
+      180.17deg,
+      #ffffff 0.14%,
+      rgba(255, 255, 255, 0) 99.85%
+    ),
+    #fffbf1;
+  background-repeat: no-repeat;
+  padding-top: 12.2rem;
+}
+
+/* == CUSTOM NORMALIZE == */
+* {
+  box-sizing: border-box;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+}
+
+/* == MAIN HEADER == */
+#main-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2.4rem;
+  padding-bottom: 1.6rem;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: $neutral-white;
+
+  > button {
+    @include tablet-landscape {
+      display: none;
+    }
+
+    i {
+      font-size: 2.4rem;
+    }
+  }
+
+  > nav {
+    display: none;
+
+    @include tablet-landscape {
+      display: flex;
+      align-items: center;
+      gap: 5.2rem;
+    }
+
+    > a:not(.btn) {
+      font-size: $text-sm;
+      font-weight: $font-weight-bold;
+      text-decoration: none;
+      color: $neutral-medium;
+      transition: $transition-base;
+
+      &:hover {
+        color: $neutral-black;
+      }
+    }
+  }
+}
+
+/* == MAIN CONTENT == */
+#main-content {
+  header {
+    margin-bottom: 2.4rem;
+
+    @include tablet-landscape {
+      margin-bottom: 6rem;
+    }
+
+    h2,
+    p {
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 0;
+      margin-bottom: 1.2rem;
+      font-size: 2.4rem;
+
+      @include tablet-landscape {
+        font-size: 3.2rem;
+      }
+    }
+
+    p {
+      @include tablet-landscape {
+        width: 93rem;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/* == MAIN FOOTER == */
+#main-footer {
+  height: 34.3rem;
+  background-color: $primary-medium;
+  margin-top: 21.8rem;
+}
+
+/* == CAROUZEL CUSTOMIZATION == */
+#main-content {
+  [data-carouzel] {
+    [data-carouzel-previousarrow] {
+      left: 0;
+    }
+
+    [data-carouzel-nextarrow] {
+      right: -2.4rem;
+    }
+
+    [data-carouzel-previousarrow],
+    [data-carouzel-nextarrow] {
+      background: none;
+      border: none;
+    }
+  }
+}
