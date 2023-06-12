@@ -1,0 +1,48 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+
+  label {
+    font-size: $text-xxs;
+    color: $neutral-dark;
+  }
+
+  input,
+  select,
+  textarea {
+    width: 100%;
+    padding: 1.6rem 1.2rem;
+    outline: 1px solid $neutral-medium;
+    border-radius: $rounded-xs;
+    color: $neutral-dark;
+    caret-color: $primary-medium;
+    border: none;
+
+    $placeholder-color: $neutral-medium;
+    &::placeholder {
+      color: $placeholder-color;
+      opacity: 1;
+    }
+
+    &:-ms-input-placeholder {
+      color: $placeholder-color;
+    }
+
+    &::-ms-input-placeholder {
+      color: $placeholder-color;
+    }
+  }
+
+  &:focus-within {
+    label {
+      color: $primary-medium;
+    }
+
+    input,
+    select,
+    textarea {
+      outline: 2px solid $primary-medium;
+    }
+  }
+}
