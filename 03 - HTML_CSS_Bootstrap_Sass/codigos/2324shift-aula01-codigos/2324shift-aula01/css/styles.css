@@ -1,0 +1,35 @@
+/* p {
+  color: #0000ff;
+} */
+
+body {
+  font-family: 'Open Sans', sans-serif, Arial;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: red;
+}
+
+#meu-id {
+  color: orchid;
+}
+
+.minha-classe {
+  color: indigo;
+}
+
+#estilizacao-fontes {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+  color: rgb(10, 232, 145); /* com opacity: rgba(10, 232, 145, 0.5); */
+  font-weight: 700;
+  text-align: center;
+  text-decoration: underline;
+  text-transform: lowercase;
+  line-height: 32px;
+}

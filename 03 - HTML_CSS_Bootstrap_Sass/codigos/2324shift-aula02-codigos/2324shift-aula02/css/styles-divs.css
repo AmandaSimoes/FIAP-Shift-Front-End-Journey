@@ -1,0 +1,49 @@
+.tamanhoDiv {
+  width: 300px;
+  height: 300px;
+
+  /* 1 valor
+       valor único: top/bottom/right/left */
+  /* margin: 8px; */
+
+  /* - 2 valores -> 
+         primeiro valor: top/bottom
+         segundo valor: right left */
+  /* margin: 8px 10px; */
+
+  /* - 3 valores -> 
+         primeiro valor: top
+         segundo valor: right left
+         terceiro valor: bottom */
+  /* margin: 8px 10px 24px; */
+
+  /* - 4 valores -> 
+         primeiro valor: top
+         segundo valor: right
+         terceiro valor: bottom
+         quarto valor: left */
+  /* margin: 8px 10px 24px 12px; */
+
+  margin-top: 8px;
+  margin-bottom: 24px;
+  margin-right: 10px;
+  margin-left: 12px;
+
+  border: 3px solid #dc2626;
+  border-radius: 8px;
+  /* border-width: 3px;
+  border-style: dashed;
+  border-color: #dc2626; */
+
+  padding: 8px 32px;
+
+  box-sizing: border-box;
+}
+
+.tamanhoDivMinMax {
+  min-width: 200px;
+  max-width: 300px;
+
+  min-height: 50px;
+  max-height: 200px;
+}

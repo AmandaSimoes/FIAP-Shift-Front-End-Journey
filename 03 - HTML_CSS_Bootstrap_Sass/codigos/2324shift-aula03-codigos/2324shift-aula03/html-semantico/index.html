@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/globals.css" />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Aula 03 - HTML Semântico</title>
+  </head>
+  <body>
+    <header id="main-header" class="container">
+      <img
+        src="./static/logo.svg"
+        alt="Logo Casa do Vira Lata representado por uma pata de cachorro"
+      />
+
+      <nav>
+        <a href="/unidades-de-medida">Como funciona?</a>
+        <a href="/background">Quem somos?</a>
+        <a href="/display-flex">Os voluntários</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero-section" class="container">
+        <div id="hero-section-text">
+          <h1>Adotar<br />é um ato de <span class="highlight">amor.</span></h1>
+
+          <p>
+            Não existem animais de rua, existem animais nas ruas e eles precisam
+            de nós.
+          </p>
+        </div>
+
+        <div class="wrapper-image">
+          <img
+            src="./static/cachorro-adotado.png"
+            alt="Um cachorro de pelos dourados e um menino branco e loiro atrás"
+          />
+        </div>
+      </section>
+
+      <div id="main-article" class="post-layout container">
+        <article>
+          <section>
+            <header>
+              <h2><i class="fa-solid fa-folder"></i> Lorem ipsum</h2>
+              <span>Lorem ipsum sub titulo</span>
+            </header>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+              ipsa, accusamus aliquid aut totam nesciunt? Iure maiores inventore
+              dolore magni rerum officiis praesentium delectus? Rem sed incidunt
+              iusto earum perspiciatis.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+              ipsa, accusamus aliquid aut totam nesciunt? Iure maiores inventore
+              dolore magni rerum officiis praesentium delectus? Rem sed incidunt
+              iusto earum perspiciatis.
+            </p>
+          </section>
+
+          <section>
+            <h2><i class="fa-solid fa-wifi"></i> Lorem ipsum 2</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+              ipsa, accusamus aliquid aut totam nesciunt? Iure maiores inventore
+              dolore magni rerum officiis praesentium delectus? Rem sed incidunt
+              iusto earum perspiciatis.
+            </p>
+          </section>
+
+          <section>
+            <h2>Lorem ipsum Conclusão</h2>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit
+              ipsa, accusamus aliquid aut totam nesciunt? Iure maiores inventore
+              dolore magni rerum officiis praesentium delectus? Rem sed incidunt
+              iusto earum perspiciatis.
+            </p>
+          </section>
+        </article>
+
+        <aside id="content-aside">
+          <header>
+            <h1>Relacionado ao Lorem Ipsum</h1>
+          </header>
+
+          <section>
+            <ul>
+              <li><a href="#">O que faz lorem ipsum?</a></li>
+              <li><a href="#">Onde vivem lorem ipsum?</a></li>
+            </ul>
+          </section>
+        </aside>
+      </div>
+    </main>
+
+    <footer id="main-footer"></footer>
+  </body>
+</html>

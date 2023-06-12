@@ -1,0 +1,62 @@
+.main {
+  display: grid;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+}
+
+.main .header {
+  background-color: lightblue;
+}
+
+.main .menu {
+  background-color: lightgreen;
+  height: 8rem;
+}
+
+.main .content {
+  background-color: lightcoral;
+  height: 8rem;
+}
+
+.main .footer {
+  background-color: lightslategray;
+}
+
+.main .post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.layout {
+  display: grid;
+  grid-template-areas:
+    'header header header header'
+    'menu content content content'
+    'footer footer footer footer';
+}
+
+.layout .header {
+  background-color: lightblue;
+  grid-area: header;
+}
+
+.layout .menu {
+  background-color: lightgreen;
+  grid-area: menu;
+  height: 8rem;
+}
+
+.layout .content {
+  background-color: lightcoral;
+  grid-area: content;
+  height: 8rem;
+}
+
+.layout .footer {
+  background-color: lightslategray;
+  grid-area: footer;
+}

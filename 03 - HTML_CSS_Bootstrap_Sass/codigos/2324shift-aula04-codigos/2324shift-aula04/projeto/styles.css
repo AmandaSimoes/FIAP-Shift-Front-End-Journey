@@ -1,0 +1,145 @@
+body {
+  font-size: 1.6rem;
+  background: linear-gradient(
+      180.17deg,
+      #ffffff 0.14%,
+      rgba(255, 255, 255, 0) 99.85%
+    ),
+    #fffbf1;
+}
+
+.container {
+  width: 114.3rem;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  box-shadow: 0px 4px 14px 3px rgba(205, 189, 189, 0.25);
+  filter: drop-shadow(0px 4px 4px rgba(198, 183, 183, 0.25));
+  border-radius: 2.4rem;
+}
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  margin-bottom: 4.2rem;
+}
+
+#main-header nav {
+  display: flex;
+  gap: 5.2rem;
+}
+
+#main-header nav a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+}
+
+#main-content header {
+  margin-bottom: 7.2rem;
+}
+
+#main-content header h2 {
+  text-align: center;
+  font-size: 3.2rem;
+  margin-bottom: 0.8rem;
+}
+
+#main-content h3 {
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+#main-content header p {
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+#hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#hero-section #hero-section-text {
+  width: 40.9rem;
+}
+
+#hero-section #hero-section-text h1 {
+  font-size: 6.8rem;
+  color: #36392e;
+  text-align: left;
+  margin-bottom: 1.6rem;
+  line-height: 101.5%;
+}
+
+#hero-section #hero-section-text p {
+  color: #36392e;
+  font-size: 1.8rem;
+}
+
+#hero-section .wrapper-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#hero-section .wrapper-image img {
+  height: 50.3rem;
+  border-radius: 100%;
+}
+
+#main-article {
+  margin-top: 4.2rem;
+}
+
+#main-article h2 {
+  margin-bottom: 0.8rem;
+}
+
+.highlight {
+  color: #145fa4;
+}
+
+#main-footer {
+  height: 34.3rem;
+  background-color: #75a342;
+  margin-top: 21.8rem;
+}
+
+.post-layout {
+  display: grid;
+  grid-template-columns: 1fr 30rem;
+  gap: 2.4rem;
+}
+
+#content-aside h1 {
+  text-align: left;
+  font-size: 1.8rem;
+}
+
+#adote-um-amigo-paragrafo {
+  width: 93rem;
+  margin: 0 auto;
+}
+
+#adote-um-amigo-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+#adote-um-amigo-content-wrapper img {
+  height: 45.4rem;
+}
+
+#adote-um-amigo-content-wrapper .form-wrapper {
+  padding: 4.4rem 2.4rem;
+}
+
+#adote-um-amigo-content-wrapper .card {
+  flex-basis: 50rem;
+}

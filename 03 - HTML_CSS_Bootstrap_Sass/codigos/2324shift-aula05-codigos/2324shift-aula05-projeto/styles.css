@@ -1,0 +1,164 @@
+/* == HERO SECTION == */
+#hero-section {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  margin-bottom: 8.4rem;
+  gap: 2.2rem;
+}
+
+#hero-section #hero-section-image {
+  display: flex;
+  justify-content: center;
+}
+
+#hero-section #hero-section-image img {
+  height: 26.6rem;
+  border-radius: var(--rounded-full);
+}
+
+#hero-section #hero-section-text h1 {
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+#hero-section #hero-section-text p {
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+#hero-section #hero-section-text .btn {
+  width: 100%;
+  margin-top: 2.4rem;
+}
+
+@media (min-width: 1024px) {
+  #hero-section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #hero-section #hero-section-text {
+    width: 40.9rem;
+    order: 1;
+  }
+
+  #hero-section #hero-section-image {
+    order: 2;
+    justify-content: flex-end;
+  }
+
+  #hero-section #hero-section-text h1,
+  #hero-section #hero-section-text p {
+    text-align: left;
+  }
+
+  #hero-section #hero-section-image img {
+    height: 45.3rem;
+  }
+
+  #hero-section #hero-section-text .btn {
+    width: auto;
+    margin-top: 3.8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  #hero-section #hero-section-image img {
+    height: 50.3rem;
+  }
+}
+
+/* == HOW IT WORKS == */
+#how-it-works {
+  margin-bottom: 7.8rem;
+}
+
+#how-it-works .content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7.2rem;
+  padding: 0 1.6rem;
+}
+
+#how-it-works .content .content-item {
+  display: grid;
+  gap: 1.6rem;
+}
+
+#how-it-works .content .content-item h3,
+#how-it-works .content .content-item p {
+  text-align: center;
+  margin: 0;
+}
+
+#how-it-works .content .content-item h3 {
+  font-size: var(--text-sm);
+}
+
+#how-it-works .content .content-item img {
+  height: 14.9rem;
+  margin: 0 auto 3rem;
+}
+
+@media (min-width: 1024px) {
+  #how-it-works {
+    margin-bottom: 11.2rem;
+  }
+
+  #how-it-works .content {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* == WHO WE ARE == */
+#who-we-are .content {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-areas:
+    'first first'
+    'second third';
+}
+
+#who-we-are .content > div {
+  border-radius: var(--rounded-lg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#who-we-are .content .first-pic {
+  grid-area: first;
+  height: 19.3rem;
+  background-image: url('/public/images/quem-somos-homem-mulher-cachorro-adotado.png');
+}
+
+#who-we-are .content .second-pic {
+  grid-area: second;
+  height: 15.3rem;
+  background-image: url('/public/images/quem-somos-filhotes-na-rua.png');
+}
+
+#who-we-are .content .third-pic {
+  grid-area: third;
+  height: 15.3rem;
+  background-image: url('/public/images/quem-somos-maos-patas-cachorro-adotado.png');
+}
+
+@media (min-width: 1024px) {
+  #who-we-are .content {
+    grid-template-areas:
+      'first first second'
+      'first first third';
+  }
+
+  #who-we-are .content .first-pic {
+    height: 50rem;
+  }
+
+  #who-we-are .content .second-pic,
+  #who-we-are .content .third-pic {
+    height: 24.4rem;
+  }
+}

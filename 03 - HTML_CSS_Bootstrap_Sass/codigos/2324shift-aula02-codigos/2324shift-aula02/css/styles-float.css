@@ -1,0 +1,17 @@
+.image {
+  height: 150px;
+}
+
+.image-left {
+  float: left;
+  margin-right: 12px;
+}
+
+.image-right {
+  float: right;
+  margin-left: 12px;
+}
+
+.clear {
+  clear: right;
+}

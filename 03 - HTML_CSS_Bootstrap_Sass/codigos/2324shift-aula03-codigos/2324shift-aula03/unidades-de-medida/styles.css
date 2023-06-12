@@ -1,0 +1,42 @@
+html {
+  font-size: 10px;
+}
+
+p {
+  border: 1px solid red;
+}
+
+.sub {
+  height: 100vh;
+  background: #d1d5db;
+  color: #030712;
+}
+
+.um-px {
+  width: 500px;
+}
+
+.um-percent {
+  width: 80%;
+}
+
+.um-v {
+  width: 80vw;
+  height: 30vh;
+}
+
+.um-em-wrapper-15px {
+  font-size: 15px;
+}
+
+.um-em-wrapper-20px {
+  font-size: 20px;
+}
+
+.um-em {
+  width: 50em;
+}
+
+.um-rem {
+  width: 10rem;
+}

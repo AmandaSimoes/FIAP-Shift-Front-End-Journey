@@ -1,0 +1,90 @@
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 114.3rem;
+  margin: 0 auto;
+}
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  margin-bottom: 4.2rem;
+}
+
+#main-header nav {
+  display: flex;
+  gap: 5.2rem;
+}
+
+#main-header nav a {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000000;
+}
+
+#hero-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+#hero-section #hero-section-text {
+  width: 40.9rem;
+}
+
+#hero-section #hero-section-text h1 {
+  font-size: 6.8rem;
+  color: #36392e;
+  text-align: left;
+  margin-bottom: 1.6rem;
+  line-height: 101.5%;
+}
+
+#hero-section #hero-section-text p {
+  color: #36392e;
+  font-size: 1.8rem;
+}
+
+#hero-section .wrapper-image {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#hero-section .wrapper-image img {
+  height: 50.3rem;
+  border-radius: 100%;
+}
+
+#main-article {
+  margin-top: 4.2rem;
+}
+
+#main-article h2 {
+  margin-bottom: 0.8rem;
+}
+
+.highlight {
+  color: #145fa4;
+}
+
+#main-footer {
+  height: 34.3rem;
+  background-color: #75a342;
+  margin-top: 21.8rem;
+}
+
+.post-layout {
+  display: grid;
+  grid-template-columns: 1fr 30rem;
+  gap: 2.4rem;
+}
+
+#content-aside h1 {
+  text-align: left;
+  font-size: 1.8rem;
+}

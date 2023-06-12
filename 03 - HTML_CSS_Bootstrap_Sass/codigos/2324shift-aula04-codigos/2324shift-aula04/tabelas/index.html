@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/globals.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Aula 04 - Tabelas</title>
+  </head>
+  <body>
+    <main>
+      <h1>Tabelas</h1>
+
+      <h2>Lista de Usuários</h2>
+
+      <table class="table">
+        <caption>
+          Todos os usuários do sistema
+        </caption>
+
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th style="width: 20rem">Nome</th>
+            <th>Email</th>
+            <th>Telefone</th>
+            <th colspan="2">Website</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>000001</td>
+            <td>Gustavo Sales</td>
+            <td>gustavo@gsales.io</td>
+            <td>11952978616</td>
+            <td>gsales.io</td>
+            <td>
+              <div class="table-column-actions">
+                <a href="#">Visualizar</a>
+                <a href="#">Editar</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>000002</td>
+            <td>Outro Gustavo</td>
+            <td>gustavo+2@gsales.io</td>
+            <td>11912345678</td>
+            <td>google.com</td>
+            <td>
+              <div class="table-column-actions">
+                <a href="#">Visualizar</a>
+                <a href="#">Editar</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>000002</td>
+            <td>Outro Gustavo</td>
+            <td>gustavo+2@gsales.io</td>
+            <td>11912345678</td>
+            <td>google.com</td>
+            <td>
+              <div class="table-column-actions">
+                <a href="#">Visualizar</a>
+                <a href="#">Editar</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>000002</td>
+            <td>Outro Gustavo</td>
+            <td>gustavo+2@gsales.io</td>
+            <td>11912345678</td>
+            <td>google.com</td>
+            <td>
+              <div class="table-column-actions">
+                <a href="#">Visualizar</a>
+                <a href="#">Editar</a>
+              </div>
+            </td>
+          </tr>
+
+          <tr>
+            <td>000002</td>
+            <td>Outro Gustavo</td>
+            <td>gustavo+2@gsales.io</td>
+            <td>11912345678</td>
+            <td>google.com</td>
+            <td>
+              <div class="table-column-actions">
+                <a href="#">Visualizar</a>
+                <a href="#">Editar</a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="6">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Perspiciatis, corrupti itaque dolorem distinctio libero.
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+
+      <h2>Lista de Notas</h2>
+
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Materia</th>
+            <th>Primeiro Trimestre</th>
+            <th>Segundo Trimestre</th>
+            <th>Terceiro Trimestre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>Programação Javascript</th>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Banco de Dados</th>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>UI/UX</th>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>DevOps</th>
+            <td>10</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+body {
+  height: 200rem;
+}
+
+#form-general {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+#form-general fieldset {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.actions {
+  display: flex;
+  gap: 0.8rem;
+}

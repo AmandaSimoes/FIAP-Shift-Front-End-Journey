@@ -1,0 +1,32 @@
+div {
+  border: 2px solid #22c55e;
+  padding: 8px;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.div-block {
+  display: block;
+}
+
+.div-inline {
+  display: inline;
+}
+
+.div-left {
+  float: left;
+}
+
+.w-full {
+  width: 100%;
+}
+
+/* 
+#divs-float-left div {
+  margin-right: 24px;
+}
+*/
+
+#divs-float-left .div-left {
+  margin-right: 24px;
+}

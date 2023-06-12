@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,600;1,200&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/globals.css" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Aula 04 - Formulários</title>
+  </head>
+  <body>
+    <main>
+      <h1>Formulários</h1>
+
+      <form id="form-general" method="get" action="">
+        <fieldset>
+          <legend>Campos com a tag Input</legend>
+
+          <div>
+            <label for="nome-completo">Nome Completo</label>
+            <input
+              type="text"
+              id="nome-completo"
+              name="nomeCompleto"
+              required
+              autofocus
+              minlength="3"
+              maxlength="10"
+            />
+          </div>
+
+          <div>
+            <label for="email">E-mail</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="ex: gustavo@fiap.com.br"
+              required
+              value="gustavo@gsales.io"
+              readonly
+            />
+          </div>
+
+          <div>
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" />
+          </div>
+
+          <div>
+            <label for="dt-nasc">Data de Nascimento</label>
+            <input type="date" id="dt-nasc" name="dtNasc" disabled />
+          </div>
+
+          <div>
+            <label for="hr-nasc">Hora do Nascimento</label>
+            <input type="time" id="hr-nasc" name="hrNasc" />
+          </div>
+
+          <div>
+            <label for="date-time-local">Data e Hora Juntos</label>
+            <input
+              type="datetime-local"
+              id="date-time-local"
+              name="dateTimeLocal"
+            />
+          </div>
+
+          <div>
+            <label for="mes-nasc">Mês do Nascimento</label>
+            <input type="month" id="mes-nasc" name="mesNasc" />
+          </div>
+
+          <div>
+            <label for="semana-nasc">Semana do Nascimento</label>
+            <input type="week" id="semana-nasc" name="semanaNasc" />
+          </div>
+
+          <div>
+            <label for="idade-atual">Idade Atual</label>
+            <input type="number" id="idade-atual" name="idadeAtual" />
+          </div>
+
+          <div>
+            <label for="nota">De uma nota de 20 a 80</label>
+            <input type="range" id="nota" name="nota" min="20" max="80" />
+          </div>
+
+          <div>
+            <label for="cor">Sua cor favorita</label>
+            <input type="color" id="cor" name="cor" />
+          </div>
+
+          <div>
+            <span>Seu filme dos vingadores favorito</span>
+
+            <div>
+              <label for="ultimato">Ultimato</label>
+              <input
+                type="radio"
+                id="ultimato"
+                name="filmeFavorito"
+                value="ultimato"
+              />
+            </div>
+
+            <div>
+              <label for="guerra-infinita">Guerra Infinita</label>
+              <input
+                type="radio"
+                id="guerra-infinita"
+                name="filmeFavorito"
+                value="guerra-infinita"
+              />
+            </div>
+
+            <div>
+              <label for="era-de-ultron">Era de Ultron</label>
+              <input
+                type="radio"
+                id="era-de-ultron"
+                name="filmeFavorito"
+                value="era-de-ultron"
+              />
+            </div>
+          </div>
+
+          <div>
+            <span>Seu segundo filme dos vingadores favorito</span>
+
+            <div>
+              <label for="checkbox-ultimato">Ultimato</label>
+              <input
+                type="checkbox"
+                id="checkbox-ultimato"
+                name="segundoFilmeFavorito"
+                value="ultimato"
+              />
+            </div>
+
+            <div>
+              <label for="checkbox-guerra-infinita">Guerra Infinita</label>
+              <input
+                type="checkbox"
+                id="checkbox-guerra-infinita"
+                name="segundoFilmeFavorito"
+                value="guerra-infinita"
+              />
+            </div>
+
+            <div>
+              <label for="checkbox-era-de-ultron">Era de Ultron</label>
+              <input
+                type="checkbox"
+                id="checkbox-era-de-ultron"
+                name="segundoFilmeFavorito"
+                value="era-de-ultron"
+              />
+            </div>
+          </div>
+
+          <div>
+            <label for="meu-arquivo">Suba um arquivo</label>
+            <input type="file" id="meu-arquivo" />
+          </div>
+
+          <div class="actions">
+            <input type="submit" value="Enviar dados" />
+            <input type="reset" value="Limpar formulário" />
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Campos sem a tag Input</legend>
+
+          <label for="meu-select">Selecione sua linguagem de programação</label>
+          <select name="linguagemProgramacao" id="meu-select" required>
+            <option value="" disabled selected>Selecione</option>
+            <option>Javascript</option>
+            <option>Python</option>
+            <option>Elixir</option>
+          </select>
+
+          <label for="meu-select">Selecione sua linguagem de programação</label>
+          <input list="linguagens-marcacao" name="linguagensMarcacao" />
+          <datalist id="linguagens-marcacao">
+            <option value="HTML"></option>
+            <option value="CSS"></option>
+            <option value="PUG"></option>
+            <option value="JADE"></option>
+          </datalist>
+
+          <label for="comentarios">Deixe seu comentário</label>
+          <textarea
+            id="comentarios"
+            name="comentarios"
+            required
+            maxlength="100"
+          ></textarea>
+
+          <div class="actions">
+            <button type="submit">Enviar dados</button>
+            <button type="reset">Limpar formulário</button>
+            <button type="button" onclick="prompt('Digite seu nome')">
+              Executar qualquer coisa
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>

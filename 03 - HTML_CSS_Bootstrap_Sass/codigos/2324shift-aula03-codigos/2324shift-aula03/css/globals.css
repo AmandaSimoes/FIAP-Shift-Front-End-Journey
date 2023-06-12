@@ -1,0 +1,33 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  background-color: #f9fafb;
+  color: #1f2937;
+}
+
+h1 {
+  text-align: center;
+}
+
+#main-nav {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+#main-nav a {
+  background: #e5e7eb;
+  text-decoration: none;
+  color: #1f2937;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: all 200ms ease-in-out;
+}
+
+#main-nav a:hover {
+  background: #d4d4d8;
+}
