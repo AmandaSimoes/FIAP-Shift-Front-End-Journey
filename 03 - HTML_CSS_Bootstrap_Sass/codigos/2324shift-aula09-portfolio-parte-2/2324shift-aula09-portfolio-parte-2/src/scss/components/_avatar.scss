@@ -1,0 +1,12 @@
+.avatar {
+  border-radius: $rounded-full;
+  outline: 2px solid $gray-100;
+  filter: $shadow-filter-one;
+
+  @include bg-rules;
+
+  &-large {
+    width: 8.8rem;
+    height: 8.8rem;
+  }
+}

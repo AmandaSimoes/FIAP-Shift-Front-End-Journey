@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/node_modules/remixicon/fonts/remixicon.css" />
+    <link rel="stylesheet" href="/public/css/globals.css" />
+
+    <title>Forms</title>
+  </head>
+  <body>
+    <main class="pb-5">
+      <section class="container">
+        <h2 class="display-6 mb-3 fw-bold">Login</h2>
+
+        <form class="d-grid gap-3">
+          <div>
+            <label class="form-label mb-0" for="username">Username</label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="ri-at-line"></i>
+              </span>
+              <input type="text" class="form-control" id="username" />
+            </div>
+          </div>
+
+          <div>
+            <label class="form-label mb-0" for="password"> Senha </label>
+            <div class="input-group">
+              <span class="input-group-text">
+                <i class="ri-lock-line"></i>
+              </span>
+              <input type="password" class="form-control" id="password" />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary w-25">Entrar</button>
+        </form>
+      </section>
+
+      <hr />
+
+      <section class="container">
+        <h2 class="display-6 mb-3 fw-bold">Cadastro</h2>
+
+        <form class="d-grid gap-3 needs-validation" novalidate>
+          <div class="form-floating">
+            <input
+              id="email"
+              type="email"
+              class="form-control"
+              placeholder="nome@exemplo.com.br"
+              required
+            />
+            <label for="email">Email</label>
+            <div class="valid-feedback">Email válido</div>
+            <div class="invalid-feedback">Email inválido</div>
+          </div>
+
+          <div class="form-floating">
+            <input
+              id="username"
+              type="text"
+              class="form-control"
+              placeholder="@nome"
+              required
+            />
+            <label for="username">Nome de usuário</label>
+          </div>
+
+          <div class="form-floating">
+            <input
+              id="password"
+              type="password"
+              class="form-control"
+              placeholder="*******"
+              required
+            />
+            <label for="password">Senha</label>
+            <div class="invalid-feedback">Escreva uma senha mais forte.</div>
+          </div>
+
+          <div class="form-floating">
+            <select class="form-select" id="time-of-development" required>
+              <option selected disabled value="">Selecione</option>
+              <option>Menos de 1 ano</option>
+              <option>Entre 1 e 5 anos</option>
+              <option>Entre 5 e 10 anos</option>
+              <option>Mais de 10 anos</option>
+            </select>
+            <label for="time-of-development">Há quanto tempo programa?</label>
+          </div>
+
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="checkbox"
+              value="true"
+              id="accept-terms"
+              required
+            />
+            <label class="form-check-label" for="accept-terms"
+              >Li e aceito os termos</label
+            >
+          </div>
+
+          <button type="submit" class="btn btn-primary w-50">
+            Finalizar cadastro
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/public/scripts/validator.js"></script>
+  </body>
+</html>

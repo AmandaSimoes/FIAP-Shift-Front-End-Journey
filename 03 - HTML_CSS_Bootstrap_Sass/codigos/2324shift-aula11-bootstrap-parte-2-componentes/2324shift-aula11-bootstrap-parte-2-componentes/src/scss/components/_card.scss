@@ -1,0 +1,38 @@
+// This is an extension of bootstrap Card component
+
+.card {
+  &-img-background {
+    width: 100%;
+    height: 15rem;
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
+
+    @include media-breakpoint-up(lg) {
+      height: 9.75rem;
+    }
+  }
+
+  &-actions-group {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+
+    &-center {
+      justify-content: center;
+    }
+
+    &-end {
+      justify-content: flex-end;
+    }
+  }
+
+  &-secondary-link {
+    text-decoration: none;
+    color: var(--bs-secondary-text-emphasis);
+
+    &:hover {
+      color: var(--bs-light-text-emphasis);
+    }
+  }
+}

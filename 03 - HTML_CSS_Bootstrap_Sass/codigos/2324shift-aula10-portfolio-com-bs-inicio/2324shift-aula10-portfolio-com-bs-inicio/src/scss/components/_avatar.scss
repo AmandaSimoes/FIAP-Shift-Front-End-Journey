@@ -1,0 +1,13 @@
+.avatar {
+  border-radius: $border-radius-full;
+  outline: 2px solid $gray-100;
+  filter: $box-shadow-lg;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  &-large {
+    width: px-to-rem(88);
+    height: px-to-rem(88);
+  }
+}

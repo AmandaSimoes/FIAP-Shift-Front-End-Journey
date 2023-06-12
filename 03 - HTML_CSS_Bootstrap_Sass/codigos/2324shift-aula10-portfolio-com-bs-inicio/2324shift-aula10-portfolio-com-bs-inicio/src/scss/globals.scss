@@ -1,0 +1,44 @@
+@import 'variables';
+@import 'bootstrap';
+@import 'functions/px-to-rem';
+
+@import 'components/code-text';
+@import 'components/avatar';
+
+.logo {
+  font-weight: $font-weight-bold;
+  font-size: px-to-rem(24);
+  margin-bottom: 0;
+}
+
+.navigator {
+  display: flex;
+  gap: px-to-rem(4);
+
+  @include media-breakpoint-up(lg) {
+    gap: px-to-rem(10);
+  }
+
+  a {
+    padding: px-to-rem(6) px-to-rem(10);
+    border-radius: $border-radius;
+    font-weight: $font-weight-bold;
+    color: $gray-600;
+    text-decoration: none;
+    transition: $transition-base;
+    font-size: $font-size-sm;
+
+    @include media-breakpoint-up(lg) {
+      font-size: $font-size-base;
+    }
+
+    &:hover {
+      color: $gray-700;
+    }
+
+    &.active {
+      color: $gray-900;
+      background-color: $gray-200;
+    }
+  }
+}

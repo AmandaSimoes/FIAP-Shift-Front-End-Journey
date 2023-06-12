@@ -1,0 +1,106 @@
+/* == HOMEPAGE == */
+@import '../imports';
+
+/* == HERO SECTION == */
+#hero-section {
+  @include desktop {
+    margin-top: 1rem;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.4rem;
+
+    @include desktop {
+      grid-template-columns: 32rem 35rem;
+      justify-content: space-between;
+      gap: 0;
+    }
+
+    .profile-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: px-to-rem(24px);
+
+      @include desktop {
+        gap: px-to-rem(12px);
+      }
+
+      .highlight {
+        color: $success;
+        font-family: $font-family-code;
+        font-size: $text-xs;
+        text-align: center;
+
+        @include desktop {
+          text-align: left;
+        }
+      }
+
+      .profile-info-wrapper {
+        display: flex;
+        justify-content: center;
+        gap: px-to-rem(12px);
+
+        @include desktop {
+          justify-content: flex-start;
+        }
+
+        .avatar {
+          background-image: url('/public/images/john-doe-profile-picture.png');
+        }
+
+        .profile-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          h1 {
+            font-size: $text-lg;
+            font-weight: $font-weight-bold;
+            color: $gray-800;
+            margin: 0;
+          }
+
+          div {
+            font-size: $text-xs;
+            color: $gray-500;
+          }
+        }
+      }
+    }
+
+    .profile-bio {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+
+      @include desktop {
+        justify-content: center;
+      }
+
+      p {
+        font-style: italic;
+        text-align: center;
+        margin: 0;
+        color: $gray-500;
+        font-size: 1.4rem;
+
+        @include desktop {
+          text-align: right;
+        }
+      }
+    }
+  }
+}
+
+/* == LAST POST == */
+#last-blog-post {
+  margin-top: 7.2rem;
+
+  @include desktop {
+    width: 69.8rem;
+    @include margin-auto;
+  }
+}

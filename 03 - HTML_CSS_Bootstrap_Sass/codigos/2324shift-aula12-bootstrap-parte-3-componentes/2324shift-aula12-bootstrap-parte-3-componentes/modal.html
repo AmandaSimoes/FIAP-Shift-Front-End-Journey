@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/node_modules/remixicon/fonts/remixicon.css" />
+    <link rel="stylesheet" href="/public/css/globals.css" />
+
+    <title>Modal</title>
+  </head>
+  <body>
+    <main class="pb-5">
+      <section class="container">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-bs-toggle="modal"
+          data-bs-target="#modal-confirmation"
+        >
+          Abrir Modal!
+        </button>
+      </section>
+
+      <div
+        class="modal fade"
+        id="modal-confirmation"
+        tabindex="-1"
+        aria-labelledby="modal-confirmation"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <article class="modal-content">
+            <header class="modal-header">
+              <h1 class="modal-title fs-5">Alterações pendentes</h1>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </header>
+
+            <section class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+              exercitationem qui eveniet unde veritatis dolorem, animi dolorum
+              dolore nostrum eos quasi eum atque quibusdam mollitia ipsum
+              debitis, quisquam esse accusamus?
+            </section>
+
+            <footer class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Continuar Editando
+              </button>
+              <button type="button" class="btn btn-primary">
+                Salvar e Sair
+              </button>
+            </footer>
+          </article>
+        </div>
+      </div>
+    </main>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

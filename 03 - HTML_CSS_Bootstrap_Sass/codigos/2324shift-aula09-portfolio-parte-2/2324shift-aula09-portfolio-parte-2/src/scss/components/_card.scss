@@ -1,0 +1,9 @@
+.card {
+  border-radius: $rounded;
+  background: $gray-200;
+  filter: $shadow-filter-two;
+
+  &-bordered {
+    border: 0.1rem solid $gray-300;
+  }
+}

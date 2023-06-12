@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/node_modules/remixicon/fonts/remixicon.css" />
+    <link rel="stylesheet" href="/public/css/globals.css" />
+
+    <title>Forms</title>
+  </head>
+  <body>
+    <main class="pb-5">
+      <section class="container">
+        <h2 class="display-6 mb-3 fw-bold">Accordions</h2>
+
+        <div class="accordion" id="main-accordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-one"
+                aria-expanded="true"
+                aria-controls="collapse-one"
+              >
+                Accordion Um
+              </button>
+            </h3>
+            <div
+              id="collapse-one"
+              class="accordion-collapse collapse show p-2"
+              data-bs-parent="#main-accordion"
+            >
+              UM - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Vero architecto aperiam dolor temporibus, praesentium asperiores
+              dicta recusandae officia, ex a, ad sit eos sequi sunt cupiditate
+              ducimus facilis ea veritatis.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-two"
+                aria-expanded="false"
+                aria-controls="collapse-two"
+              >
+                Accordion Dois
+              </button>
+            </h3>
+            <div
+              id="collapse-two"
+              class="accordion-collapse collapse p-2"
+              data-bs-parent="#main-accordion"
+            >
+              DOIS - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Vero architecto aperiam dolor temporibus, praesentium asperiores
+              dicta recusandae officia, ex a, ad sit eos sequi sunt cupiditate
+              ducimus facilis ea veritatis.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-three"
+                aria-expanded="false"
+                aria-controls="collapse-three"
+              >
+                Accordion Três
+              </button>
+            </h3>
+            <div
+              id="collapse-three"
+              class="accordion-collapse collapse p-2"
+              data-bs-parent="#main-accordion"
+            >
+              TRÊS - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Vero architecto aperiam dolor temporibus, praesentium asperiores
+              dicta recusandae officia, ex a, ad sit eos sequi sunt cupiditate
+              ducimus facilis ea veritatis.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section class="container">
+        <h2 class="display-6 mb-3 fw-bold">Accordions - Sempre Aberto</h2>
+
+        <div class="accordion" id="second-accordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse-one"
+                aria-expanded="true"
+                aria-controls="collapse-one"
+              >
+                Accordion Um
+              </button>
+            </h3>
+            <div
+              id="panelsStayOpen-collapse-one"
+              class="accordion-collapse collapse show p-2"
+            >
+              UM - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Vero architecto aperiam dolor temporibus, praesentium asperiores
+              dicta recusandae officia, ex a, ad sit eos sequi sunt cupiditate
+              ducimus facilis ea veritatis.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse-two"
+                aria-expanded="false"
+                aria-controls="collapse-two"
+              >
+                Accordion Dois
+              </button>
+            </h3>
+            <div
+              id="panelsStayOpen-collapse-two"
+              class="accordion-collapse collapse p-2"
+            >
+              DOIS - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Vero architecto aperiam dolor temporibus, praesentium asperiores
+              dicta recusandae officia, ex a, ad sit eos sequi sunt cupiditate
+              ducimus facilis ea veritatis.
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#panelsStayOpen-collapse-three"
+                aria-expanded="false"
+                aria-controls="collapse-three"
+              >
+                Accordion Três
+              </button>
+            </h3>
+            <div
+              id="panelsStayOpen-collapse-three"
+              class="accordion-collapse collapse p-2"
+            >
+              TRÊS - Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Vero architecto aperiam dolor temporibus, praesentium asperiores
+              dicta recusandae officia, ex a, ad sit eos sequi sunt cupiditate
+              ducimus facilis ea veritatis.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

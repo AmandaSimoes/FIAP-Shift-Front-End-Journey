@@ -1,0 +1,7 @@
+@mixin float-image-left($margin-right: 2rem, $margin-bottom: 2rem) {
+  float: left;
+  margin: {
+    right: $margin-right;
+    bottom: $margin-bottom;
+  }
+}

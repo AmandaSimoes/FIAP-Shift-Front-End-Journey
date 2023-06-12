@@ -1,0 +1,40 @@
+@import '../imports';
+
+/* == BLOG DETAILS == */
+.blog-details {
+  &-header {
+    &-title-wrapper {
+      height: 18.7rem;
+      width: 100%;
+      border-radius: $rounded;
+      filter: $shadow-filter-two;
+      padding: 1.2rem 1rem;
+      @include bg-rules;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        @include size(100%);
+        background: linear-gradient(
+          180deg,
+          rgba(75, 85, 99, 0) 12.01%,
+          $gray-950 100%
+        );
+        border-radius: $rounded;
+      }
+    }
+
+    &-title {
+      display: flex;
+      align-items: flex-end;
+      height: 100%;
+      color: $gray-50;
+      position: relative;
+      z-index: 20;
+    }
+  }
+}
