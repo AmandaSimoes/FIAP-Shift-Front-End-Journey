@@ -1,0 +1,11 @@
+$highlight-possibilities: (
+  'blue': $secondary-dark,
+  'green': $primary-dark,
+  'yellow': $warn,
+);
+
+@each $key, $highlight-possibility in $highlight-possibilities {
+  .highlight-#{$key} {
+    color: $highlight-possibility;
+  }
+}
